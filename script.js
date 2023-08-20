@@ -21,7 +21,6 @@ const updateClock = () => {
     const singaporeDate = new Date().toLocaleString('en-US', { timeZone: 'Asia/Singapore' });
     // set time zone singapore
     let date = new Date(singaporeDate);
-    console.log(date);
     secToDeg = (date.getSeconds() / 60) * 360;
     minuteDeg = (date.getMinutes() / 60) * 360;
     hourDeg = (date.getHours() / 12) * 360;
